@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'blodgas_input_form.dart';
 import 'theme.dart';
+import 'ocr_page.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -82,8 +84,8 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-
-        child: ListView(children: _getListData()),
+        child: OCRPage(),
+        // child: ListView(children: _getListData()),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
@@ -103,6 +105,11 @@ class _MyHomePageState extends State<MyHomePage> {
       else if(i == 1){
         widgets.add(
           MyCustomForm()
+        );
+      }
+      else if(i == 2){
+        widgets.add(
+            OCRPage()
         );
       }
       else{
