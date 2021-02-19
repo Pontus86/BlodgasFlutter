@@ -2,6 +2,14 @@
 
 Blodgastolkning i mobilen
 
+Android studio:
+To get this repo working you need flutter and dart plugins installed.
+In the flutter console, you also need to run the following:
+
+flutter pub get
+flutter pub run flutter_launcher_icons:main
+flutter pub run flutter_launcher_name:main
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
